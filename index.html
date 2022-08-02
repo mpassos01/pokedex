@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="shortcut icon" href="src/img/pokicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="vGame">
+        <div class="cScreen">
+            <div class="screen">
+                <div class="dPokemon">
+                    <h1 class="namePokemon" id="res">25 - Pikachu</h1>                     
+                </div>
+                   <div class="containerscrren2">                    
+                    <div class="img">
+                        <img src="#" alt="pokemon" id="img">
+                    </div> 
+                    <div class="atPokemon">
+                        <h2 class="atPokemon1" id="ataque"></h2>   
+                        <h2 class="atPokemon2" id="hp"></h2>
+                        <h2 class="atPokemon3" id="at"></h2>
+                    </div>
+                   </div>  
+            </div>
+        </div>
+        <div class="reseteBtn">
+            <button type="submit" id="btn3" class="btn3">R</button>
+            <button type="submit" id="btn4" class="btn3" onclick="sombrear()" onmousedown="mouseup()">S</button>
+            
+        </div>
+        
+        <div class="inputButtons">
+            <form id="form">
+                <input
+                    type="search"
+                    id="inputSearch"
+                    placeholder="Nome ou número"
+                    required
+                />
+            </form>
+            <div class="buttons">
+                <button type="submit" id="btn1" class="btn1">Voltar</button>
+                <button type="submit" id="btn2" class="btn2">Próximo</button>                
+            </div>
+    
+        </div>
+       
+    </div>
+    
+    <script src="src/script/script.js"></script>
+</body>
+</html>

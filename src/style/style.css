@@ -1,0 +1,319 @@
+/* /* @charset "UTF-8";
+
+@font-face {
+    font-family: 'Retro';
+    src: url('Retro\ Gaming.ttf');
+}
+
+:root {
+    --bodyBackgroud: #C9CCD5;
+    --gameColor: #EDEDED;
+    --boderScreen: #767189;
+    --screen: #A2BEB5;
+    --fontScreenColor: #3d3b60d7;
+    --backgroudSearch: #F7F5F2;
+    --button: #767189;
+    --fontFamily: 'Retro', sans-serif; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bodyBackgroud);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+.vGame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    width: 340px;
+    height: 495px;
+    background-color: var(--gameColor);
+    border-radius: 10px 40px 10px 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.45) inset;
+}
+
+.cScreen {
+    width: 288px;
+    height: 196px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.45) inset;
+    margin: 1.8em auto;
+    border-radius: 5px 25px 5px 5px;
+    background-color: var(--boderScreen);
+
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 263px;
+    height: 170px;
+    border-radius: 5px 25px 5px 5px;
+    background-color: var(--screen);
+    margin: 0.9em auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5) inset, -2px -2px 10px rgba(0, 0, 0, 0.25) inset;
+}
+
+.dPokemon .namePokemon {
+    width: 250px;
+    text-align: center;
+}
+
+.dPokemon h1 {
+    font-family: var(--fontFamily);
+    font-size: 20px;
+    font-weight: 200;
+    color: var(--fontScreenColor);
+}
+
+.containerScreen {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .atPokemon {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fontFamily);
+} */
+/* 
+.inputButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    margin-top: 50px;
+}
+
+.inputButtons input {
+    width: 216px;
+    height: 33px;
+    border-radius: 10px;
+    border-width: 0;
+    padding-left: 10px;
+}
+
+.btn1 {
+    width: 70px;
+    height: 25px;
+    border-radius: 20px 0px 0px 20px;
+    border-width: 0;
+    background-color: var(--button);
+    color: #EDEDED;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+}
+
+.btn2 {
+    width: 70px;
+    height: 25px;
+    border-radius: 0 20px 20px 0;
+    border-width: 0;
+    background-color: var(--button);
+    color: #EDEDED;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 5px;
+}
+
+img {
+    height: 90px;
+    width: 90px;
+} */
+
+
+@font-face {
+    font-family: Retro;
+    src: url(Retro\ Gaming.ttf);
+}
+
+:root {
+    --bodyBackgroud: #C9CCD5;
+    --gameColor: #EDEDED;
+    --boderScreen: #767189;
+    --screen: #A2BEB5;
+    --fontScreenColor: #3d3b60d7;
+    --backgroudSearch: #F7F5F2;
+    --button: #767189;
+    --fontFamily: 'Retro', sans-serif; 
+}
+
+*{
+   margin: 0;
+   padding: 0;  
+   box-sizing: border-box;  
+}
+
+body {
+    background-color: var(--bodyBackgroud);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    height: 98vh;
+}
+
+.vGame {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ;     */
+    align-items: center;
+    position: relative;
+    margin: auto;
+    width: 340px;
+    height: 495px;
+    background-color: var(--gameColor);
+    border-radius: 10px 40px 10px 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.37) inset, 0 0 15px rgba(0, 0, 0, 0.67) inset;
+}
+.cScreen{    
+    width: 288px;
+    height: 196px;
+    box-shadow: 0 0 2px #514c65;
+    border-radius: 5px 25px 5px 5px; 
+    background: var(--boderScreen);     
+    margin: 1.8em auto;
+}
+.screen{     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    height: 180px;
+    border-radius: 5px 25px 5px 5px;
+    background-color: var(--screen);
+    margin: 0.5em ;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.5) inset, -2px -2px 10px rgba(0,0,0, 0.25) inset;
+    padding: 1px;
+}
+
+.dPokemon .namePokemon{
+   width: 250px;
+   
+}
+.dPokemon  h1 {
+    font-family: var(--fontFamily);
+    font-size: 20px;
+    font-weight: 200;
+    color: var(--fontScreenColor);
+    text-align: center;
+    
+}
+.containerscrren2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 98%;
+    
+}
+.atPokemon {
+    display: flex;  
+    width: 100%;   
+    justify-content: space-evenly;
+    margin-bottom: 3px;
+   
+}
+.atPokemon1 {
+    font-family: var(--fontFamily);
+    font-size:14px;
+    font-weight: 200;
+    color: var(--fontScreenColor);
+    text-align: start;    
+}
+.atPokemon2 {
+    font-family: var(--fontFamily);
+    font-size:14px;
+    font-weight: 200;
+    color: var(--fontScreenColor);
+    text-align: start;    
+}
+.atPokemon3 {
+    font-family: var(--fontFamily);
+    font-size:14px;
+    font-weight: 200;
+    color: var(--fontScreenColor);
+    text-align: start;    
+}
+
+
+
+.img img {
+    width: 80px;
+    height: 80px;
+    filter: grayscale(100%);
+    margin-bottom: 20px;
+    /* margin-left: -35px; */
+}
+
+.inputButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    margin-top: 50px;
+   
+}
+
+.inputButtons  input {
+    width: 216px;
+    height: 33px;
+    border-radius: 10px;
+    border-width: 0;
+    padding-left: 10px;
+    color: #9e9ea7;
+    outline: none;
+}
+
+.btn1 {
+    width: 70px;
+    height: 25px;
+    border-radius: 20px 0px 0px 20px;
+    border-width: 0;
+    background-color: var(--button);
+    color: #EDEDED;
+    box-shadow: 0px 0px 5px rgba(0,0,0, 0.5)
+}
+.btn2 {
+    width: 70px;
+    height: 25px;
+    border-radius: 0px 20px 20px 0px;
+    border-width: 0;
+    background-color: var(--button);
+    color: #EDEDED;
+    box-shadow: 0px 0px 5px rgba(0,0,0, 0.5)
+}
+
+.btn3 {
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    border-width: 0;
+    background-color: var(--button);
+    color: #EDEDED;
+    box-shadow: 0px 0px 5px rgba(0,0,0, 0.5);
+    font-size: 13px;
+    font-weight: bold;    
+}
+
+.reseteBtn {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -15px;
+}
+
